@@ -130,7 +130,7 @@ b := b1;
         s(s'left-1 downto 0) := ('0' & a(a'left-1 downto 0)) + ('0' & b(b'left-1 downto 0));
 -- a - (-b)
     elsif (a(a'left) = '0' and b(b'left) = '1') then   
-        s(s'left) := '1';
+        s(s'left) := '0';
         s(s'left-1 downto 0) := ('0' & a(a'left-1 downto 0)) + ('0' & b(b'left-1 downto 0));
     end if;
 
