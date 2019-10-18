@@ -2,25 +2,29 @@
 
 Signed add/sub package(VHDL)
 
-- sign*-*magnitude
+- sign-magnitude
 - Variable length
 
 ## Data type
 
 **argument**
 
-| Bit       | Type               |
-| --------- | ------------------ |
-| [MSB]     | sign               |
-| [MSB-1:0] | fixed point number |
+bit length:L
+
+| Bit     | Type               |
+| ------- | ------------------ |
+| [L-1]   | sign               |
+| [L-2:0] | fixed point number |
 
 **return**
 
-| Bit       | Type               |
-| --------- | ------------------ |
-| [MSB]     | sign               |
-| [MSB-1]   | carry bit          |
-| [MSB-2:0] | fixed point number |
+bit length:L+1
+
+| Bit     | Type               |
+| ------- | ------------------ |
+| [L]     | sign               |
+| [L-1]   | carry bit          |
+| [L-2:0] | fixed point number |
 
 ## License
 
